@@ -1,0 +1,845 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:200,300,400,700|Montserrat:300,400,500|Open+Sans|Roboto&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   color: white;
+}
+
+.slide {
+   position: relative;
+   width: 1024px;
+   height: 768px;
+   margin: 0 auto;
+
+}
+
+/*........ Бэкграунд ........*/
+.slide_first {
+   background-image: url(img/more_copy.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.slide_second {
+   background-image: url(img/more_copy_2.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+   display: block;
+   /* perspective: 1px;
+   transform-style: preserve-3d;
+   overflow-y: auto;
+   overflow-x: hidden; */
+}
+.parallax{
+   top: 250px;
+}
+
+.slide_third {
+   background-image: url(img/more_copy_3.png);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+/*........ Первый слайд ........*/
+.slide_first_h1 {
+   padding: 100px 0 0 80px;
+   color: #0d319c;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   font-weight: 500;
+}
+.hba1c {
+   margin-left: 625px;
+   margin-top: 25px;
+   color: #0d319c;
+   font-family: 'Lato', sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.hypoglycemia {
+   margin-top: 70px;
+   margin-left: 200px;
+   color: #0d319c;
+   font-family: 'Lato', sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.cc {
+   margin-top: 60px;
+   margin-left: 770px;
+   color: #0d319c;
+   font-family: 'Lato', sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+.cd {
+   margin-left: 330px;
+   color: #0d319c;
+   font-family: 'Lato', sans-serif;
+   font-size: 30px;
+   font-weight: 400;
+}
+
+/*........ Элипсы ........*/
+.elipse {
+   position: absolute;
+}
+
+.slide_first_image {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 288px;
+   left: 587px;
+}
+
+.elipse_1 {
+   max-width: 60px;
+   max-height: 60px;
+   transition: max-width 3s;
+}
+
+.elipse_2 {
+   max-width: 46px;
+   max-height: 46px;
+   animation: elipse-2-width 0.8s infinite;
+}
+
+@keyframes elipse-2-width {
+   from {
+      max-width: 30px;
+      max-height: 30px;
+   }
+
+   to {
+      max-width: 60px;
+      max-height: 60px;
+   }
+}
+
+.elipse_3 {
+   max-width: 18px;
+   max-height: 18px;
+   animation: elipse-3-width 0.8s infinite;
+}
+
+@keyframes elipse-3-width {
+   from {
+      max-width: 0;
+      max-height: 0;
+   }
+
+   to {
+      max-width: 18px;
+      max-height: 18px;
+   }
+}
+
+.slide_second_image {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 442px;
+   left: 288px;
+}
+
+.elipse_4 {
+   max-width: 50px;
+   max-height: 50px;
+}
+
+.elipse_5 {
+   max-width: 36px;
+   max-height: 36px;
+   animation: elipse-5-width 0.8s infinite;
+}
+
+@keyframes elipse-5-width {
+   from {
+      max-width: 30px;
+      max-height: 30px;
+   }
+
+   to {
+      max-width: 50px;
+      max-height: 50px;
+   }
+}
+
+.elipse_6 {
+   max-width: 14px;
+   max-height: 14px;
+   animation: elipse-6-width 0.8s infinite;
+}
+
+@keyframes elipse-6-width {
+   from {
+      max-width: 0px;
+      max-height: 0px;
+   }
+
+   to {
+      max-width: 14px;
+      max-height: 14px;
+   }
+}
+
+.slide_third_image {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 550px;
+   left: 487px;
+}
+
+.elipse_7 {
+   max-width: 40px;
+   max-height: 40px;
+}
+
+.elipse_8 {
+   max-width: 26px;
+   max-height: 26px;
+   animation: elipse-8-width 0.8s infinite;
+}
+
+@keyframes elipse-8-width {
+   from {
+      max-width: 20px;
+      max-height: 20px;
+   }
+
+   to {
+      max-width: 40px;
+      max-height: 40px;
+   }
+}
+
+.elipse_9 {
+   max-width: 10px;
+   max-height: 10px;
+   animation: elipse-9-width 0.8s infinite;
+}
+
+@keyframes elipse-9-width {
+   from {
+      max-width: 0px;
+      max-height: 0px;
+   }
+
+   to {
+      max-width: 10px;
+      max-height: 10px;
+   }
+}
+
+.slide_fourth_image {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   top: 528px;
+   left: 829px;
+}
+
+.elipse_10 {
+   max-width: 40px;
+   max-height: 40px;
+}
+
+.elipse_11 {
+   max-width: 26px;
+   max-height: 26px;
+   animation: elipse-11-width 0.8s infinite;
+}
+
+@keyframes elipse-11-width {
+   from {
+      max-width: 20px;
+      max-height: 20px;
+   }
+
+   to {
+      max-width: 40px;
+      max-height: 40px;
+   }
+}
+
+.elipse_12 {
+   max-width: 10px;
+   max-height: 10px;
+   animation: elipse-12-width 0.8s infinite;
+}
+
+@keyframes elipse-12-width {
+   from {
+      max-width: 0px;
+      max-height: 0px;
+   }
+
+   to {
+      max-width: 10px;
+      max-height: 10px;
+   }
+}
+
+/*........ Листай вниз ........*/
+.next_slide {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.next_h2 {
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+   font-size: 16px;
+   font-weight: 200;
+   bottom: 50px;
+}
+
+.next {
+   position: absolute;
+}
+
+.next_down {
+   width: 55px;
+   height: 25px;
+   bottom: 15px;
+}
+
+.next_elipse {
+   width: 400px;
+   height: 70px;
+   bottom: 0;
+}
+
+.next_rectangle {
+   width: 800px;
+   height: 90px;
+   bottom: 0;
+}
+
+/*........ Второй слайд ........*/
+.slide_second_h1 {
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 50px;
+   font-weight: 300;
+   left: 290px;
+   top: 415px;
+   text-align: center;
+}
+
+/*........ Лёд ........*/
+.ice {
+   position: absolute;
+}
+
+.slide_ice {
+   position: absolute;
+}
+
+.ice_copy_1 {
+   width: 150px;
+   height: 210px;
+   right: 0;
+   top: 180px;
+}
+
+.ice_copy_2 {
+   width: 50px;
+   height: 50px;
+   top: 347px;
+   left: 83px;
+}
+
+.ice_copy_3 {
+   width: 110px;
+   height: 110px;
+   top: 605px;
+   left: 225px
+}
+
+.ice_copy_4 {
+   width: 80px;
+   height: 80px;
+   right: 230px;
+   bottom: -80px;
+}
+
+/*........ Третий слайд ........*/
+.slide_third_h1 {
+   color: #ffffff;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 30px;
+   font-weight: 300;
+   padding: 110px 0 0 80px;
+}
+
+/*........ Лёд ........*/
+/* .ice {
+   position: absolute;
+} */
+
+.ice_copy_5 {
+   width: 35px;
+   height: 35px;
+   left: 0;
+   top: 110px;
+}
+
+.ice_copy_6 {
+   width: 90px;
+   height: 110px;
+   top: 210px;
+   right: 0;
+}
+
+.ice_copy_7 {
+   width: 200px;
+   height: 180px;
+   left: 150px;
+   bottom: 0;
+}
+
+/*........ Органы ........*/
+.organ {
+   position: absolute;
+}
+
+.organ_arrows_1 {
+   width: 500px;
+   height: 400px;
+   left: 305px;
+   top: 200px;
+}
+
+.organ_elipse_big {
+   width: 81px;
+   height: 81px;
+   left: 484px;
+   top: 194px;
+   opacity: 0.5;
+}
+
+.organ_beta {
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+   font-size: 68px;
+   font-weight: 700;
+   left: 503px;
+   top: 188px;
+}
+
+.organ_number_1 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 442px;
+   top: 153px;
+}
+
+.organ_name_1 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 26px;
+   font-weight: 200;
+   left: 476px;
+   top: 159px;
+}
+
+.organ_elipse_1 {
+   width: 60px;
+   height: 60px;
+   left: 272px;
+   top: 247px;
+   opacity: 0.5;
+}
+
+.organ_image_1 {
+   width: 47px;
+   height: 60px;
+   left: 276px;
+   top: 247px;
+}
+
+.organ_number_8 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 240px;
+   top: 231px;
+}
+
+.organ_name_10 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 140px;
+   top: 269px;
+}
+
+.organ_elipse_2 {
+   width: 60px;
+   height: 60px;
+   left: 272px;
+   top: 337px;
+   opacity: 0.5;
+}
+
+.organ_image_2 {
+   width: 50px;
+   height: 50px;
+   left: 276px;
+   top: 343px;
+}
+
+.organ_number_9 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 241px;
+   top: 324px;
+}
+
+.organ_name_11 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 57px;
+   top: 361px;
+}
+
+.organ_elipse_3 {
+   width: 60px;
+   height: 60px;
+   left: 272px;
+   top: 481px;
+   opacity: 0.5;
+}
+
+.organ_image_3 {
+   width: 45px;
+   height: 45px;
+   left: 276px;
+   top: 486px;
+}
+
+.organ_number_10 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 219px;
+   top: 468px;
+}
+
+.organ_number_2 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 487px;
+   top: 350px;
+}
+
+.organ_number_3 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 542px;
+   top: 350px;
+}
+
+.organ_name_13 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 173px;
+   top: 504px;
+}
+
+.organ_name_5 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 25px;
+   font-weight: 200;
+   left: 430px;
+   top: 498px;
+}
+
+.organ_name_2 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 356px;
+   top: 385px;
+}
+
+.organ_name_4 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 16px;
+   font-weight: 200;
+   left: 545px;
+   top: 440px;
+}
+
+.organ_name_3 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 542px;
+   top: 390px;
+}
+
+.organ_elipse_4 {
+   width: 60px;
+   height: 60px;
+   left: 495px;
+   top: 568px;
+   opacity: 0.5;
+}
+
+.organ_image_4 {
+   width: 50px;
+   height: 50px;
+   left: 495px;
+   top: 568px;
+}
+
+.organ_number_11 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   left: 447px;
+   top: 568px;
+}
+
+.organ_name_14 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   left: 430px;
+   top: 604px;
+}
+
+.organ_elipse_5 {
+   width: 60px;
+   height: 60px;
+   right: 246px;
+   top: 569px;
+   opacity: 0.5;
+}
+
+.organ_image_8 {
+   width: 45px;
+   height: 45px;
+   right: 253px;
+   top: 578px;
+}
+
+.organ_number_4 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   right: 212px;
+   top: 561px;
+}
+
+.organ_name_6 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   right: 80px;
+   top: 604px;
+}
+
+.organ_elipse_6 {
+   width: 60px;
+   height: 60px;
+   right: 246px;
+   top: 484px;
+   opacity: 0.5;
+}
+
+.organ_image_7 {
+   width: 54px;
+   height: 44px;
+   right: 249px;
+   top: 494px;
+}
+
+.organ_number_5 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   right: 212px;
+   top: 479px;
+}
+
+.organ_name_7 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   right: 160px;
+   top: 520px;
+}
+
+.organ_elipse_7 {
+   width: 60px;
+   height: 60px;
+   right: 249px;
+   top: 245px;
+   opacity: 0.5;
+}
+
+.organ_image_6 {
+   width: 54px;
+   height: 44px;
+   right: 247px;
+   top: 413px;
+}
+
+.organ_number_6 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   right: 212px;
+   top: 393px;
+}
+
+.organ_name_8 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   right: 164px;
+   top: 437px;
+}
+
+.organ_name_15 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 15px;
+   font-weight: 200;
+   right: 105px;
+   top: 362px;
+}
+
+.organ_name_12 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 15px;
+   font-weight: 200;
+   left: 270px;
+   top: 423px;
+}
+
+.organ_elipse_8 {
+   width: 60px;
+   height: 60px;
+   right: 246px;
+   top: 399px;
+   opacity: 0.5;
+}
+
+.organ_image_5 {
+   width: 50px;
+   height: 46px;
+   right: 255px;
+   top: 252px;
+}
+
+.organ_number_7 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 35px;
+   font-weight: 700;
+   right: 214px;
+   top: 239px;
+}
+
+.organ_name_9 {
+   color: #ffffff;
+   font-family: 'Lato',
+      sans-serif;
+   font-size: 20px;
+   font-weight: 200;
+   right: 100px;
+   top: 277px;
+}
+
+.organ_rectangle {
+   width: 264px;
+   height: 322px;
+   right: 62px;
+   bottom: 100px
+}
+
+/* .text {
+   position: absolute;
+
+} */
+/* Текст */
+
+
+/* .organ {
+   color: #ffffff;
+   font-family: 'Lato', sans-serif;
+   font-size: 20px;
+   font-weight: 500;
+   /* Text style for "Нарушение" */
+/* letter-spacing: -0.34px;
+}
+
+*/ 
